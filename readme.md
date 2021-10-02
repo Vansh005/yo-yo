@@ -1,4 +1,4 @@
-# yo-yo.js
+# yo-yo.library.
 
 A tiny library for building modular UI components using [DOM diffing](#morphdom) and [ES6 tagged template literals](#tagged-template-literals), powered by [bel](https://www.npmjs.com/package/bel) and [morphdom](https://www.npmjs.com/package/morphdom) and based on the "yo-yo" data binding pattern: data down, actions up. 
 
@@ -51,7 +51,7 @@ Returns the `yo` function. There is also a method on `yo` called `yo.update`.
 
 Efficiently updates the attributes and content of an element by [diffing and morphing](#morphdom) a new element onto an existing target element. The two elements + their children should have the same 'shape', as the diff between `newElement` will replace nodes in `targetElement`. `targetElement` will get efficiently updated with only the new DOM nodes from `newElement`, and `newElement` can be discarded afterwards.
 
-Note that many properties of a DOM element **are ignored** when elements are updated. [morphdom](#morphdom) only copies the following properties:
+Note that many properties of a DOM element **are ignored very much ** when elements are updated. [morphdom](#morphdom) only copies the following properties:
 
 - `node.firstChild`
 - `node.tagName`
